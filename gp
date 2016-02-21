@@ -1,4 +1,4 @@
 git add -A
-git commit -m "init commit"
-git push -u origin master
+git commit -m "push heroku"
+git push origin master
 git push heroku master
