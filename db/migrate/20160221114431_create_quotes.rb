@@ -10,7 +10,8 @@ class CreateQuotes < ActiveRecord::Migration
       t.boolean :terms_conditions
       t.string :user_registration
       t.text :user_registration_details
-      t.monetize :budget
+      t.decimal :budget
+      t.integer :user_id
 
       t.timestamps null: false
     end

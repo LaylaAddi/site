@@ -18,7 +18,7 @@ class QuotesControllerTest < ActionController::TestCase
 
   test "should create quote" do
     assert_difference('Quote.count') do
-      post :create, quote: { budget: @quote.budget, client: @quote.client, design: @quote.design, domain_name: @quote.domain_name, hosting: @quote.hosting, images: @quote.images, pages: @quote.pages, terms_conditions: @quote.terms_conditions, user_registration: @quote.user_registration, user_registration_details: @quote.user_registration_details }
+      post :create, quote: { budget: @quote.budget, client: @quote.client, design: @quote.design, domain_name: @quote.domain_name, hosting: @quote.hosting, images: @quote.images, pages: @quote.pages, terms_conditions: @quote.terms_conditions, user_id: @quote.user_id, user_registration: @quote.user_registration, user_registration_details: @quote.user_registration_details }
     end
 
     assert_redirected_to quote_path(assigns(:quote))
@@ -35,7 +35,7 @@ class QuotesControllerTest < ActionController::TestCase
   end
 
   test "should update quote" do
-    patch :update, id: @quote, quote: { budget: @quote.budget, client: @quote.client, design: @quote.design, domain_name: @quote.domain_name, hosting: @quote.hosting, images: @quote.images, pages: @quote.pages, terms_conditions: @quote.terms_conditions, user_registration: @quote.user_registration, user_registration_details: @quote.user_registration_details }
+    patch :update, id: @quote, quote: { budget: @quote.budget, client: @quote.client, design: @quote.design, domain_name: @quote.domain_name, hosting: @quote.hosting, images: @quote.images, pages: @quote.pages, terms_conditions: @quote.terms_conditions, user_id: @quote.user_id, user_registration: @quote.user_registration, user_registration_details: @quote.user_registration_details }
     assert_redirected_to quote_path(assigns(:quote))
   end
 

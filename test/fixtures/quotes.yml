@@ -10,7 +10,8 @@ one:
   terms_conditions: false
   user_registration: MyString
   user_registration_details: MyText
-  budget: 1
+  budget: 9.99
+  user_id: 1
 
 two:
   client: MyString
@@ -22,4 +23,5 @@ two:
   terms_conditions: false
   user_registration: MyString
   user_registration_details: MyText
-  budget: 1
+  budget: 9.99
+  user_id: 1

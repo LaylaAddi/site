@@ -1,4 +1,4 @@
 git add -A
-git commit -m "added quotes scaffold updated table with migration and added rails-money"
+git commit -m "RE  added quotes scaffold no money gem or user associations"
 git push origin master
 git push heroku master

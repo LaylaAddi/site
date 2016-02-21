@@ -1,6 +1,5 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
 
   # GET /quotes
   # GET /quotes.json
@@ -70,6 +69,6 @@ class QuotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params.require(:quote).permit(:client, :pages, :images, :hosting, :domain_name, :design, :terms_conditions, :user_registration, :user_registration_details, :budget)
+      params.require(:quote).permit(:client, :pages, :images, :hosting, :domain_name, :design, :terms_conditions, :user_registration, :user_registration_details, :budget, :user_id)
     end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221103946) do
+ActiveRecord::Schema.define(version: 20160221114431) do
 
   create_table "quotes", force: :cascade do |t|
     t.string   "client"
@@ -23,11 +23,10 @@ ActiveRecord::Schema.define(version: 20160221103946) do
     t.boolean  "terms_conditions"
     t.string   "user_registration"
     t.text     "user_registration_details"
-    t.integer  "budget_cents",              default: 0,     null: false
-    t.string   "budget_currency",           default: "USD", null: false
-    t.datetime "created_at",                                null: false
-    t.datetime "updated_at",                                null: false
+    t.decimal  "budget"
     t.integer  "user_id"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "users", force: :cascade do |t|
