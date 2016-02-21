@@ -1,4 +1,4 @@
 git add -A
-git commit -m "testing registration for user in production"
+git commit -m "check padding"
 git push origin master
 git push heroku master
