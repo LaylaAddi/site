@@ -14,7 +14,7 @@ class QuotesController < ApplicationController
 
   # GET /quotes/new
   def new
-    @quote = Quote.new
+    @quote = current_user.quotes.new
   end
 
   # GET /quotes/1/edit
@@ -24,7 +24,7 @@ class QuotesController < ApplicationController
   # POST /quotes
   # POST /quotes.json
   def create
-    @quote = Quote.new(quote_params)
+    @quote = current_user.quotes.new(quote_params)
 
     respond_to do |format|
       if @quote.save
@@ -69,6 +69,18 @@ class QuotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params.require(:quote).permit(:client, :pages, :images, :hosting, :domain_name, :design, :terms_conditions, :user_registration, :user_registration_details, :budget, :user_id)
+      params.require(:quote).permit(
+        :client, 
+        :pages, 
+        :images, 
+        :hosting, 
+        :domain_name, 
+        :design, 
+        :terms_conditions, 
+        :user_registration, 
+        :user_registration_details, 
+        :budget, 
+        :user_id
+        )
     end
 end
