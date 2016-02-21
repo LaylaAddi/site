@@ -18,8 +18,7 @@ end
 
    before_filter :allow_iframe_requests
   
-
-
+  rails g scaffold Quote client:string pages:string images:string hosting:string domain_name:string design:text terms_conditions:boolean user_registration:string user_registration_details:text budget:decimal user_id:integer
   
   
   	Images supplied by you, as desired and appropriate, will be incorporated. Professional stock images may be used; if these carry a cost, your approval will be sought first.

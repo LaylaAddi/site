@@ -1,0 +1,21 @@
+<%= simple_form_for(@quote) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :client %>
+    <%= f.input :pages %>
+    <%= f.input :images %>
+    <%= f.input :hosting %>
+    <%= f.input :domain_name %>
+    <%= f.input :design %>
+    <%= f.input :terms_conditions %>
+    <%= f.input :user_registration %>
+    <%= f.input :user_registration_details %>
+    <%= f.input :budget %>
+    <%= f.input :user_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

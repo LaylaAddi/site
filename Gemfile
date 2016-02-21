@@ -13,7 +13,7 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'frontend-generators', '~> 0.0.1'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
-gem 'money-rails', '~> 1.6'
+# gem 'money-rails', '~> 1.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
