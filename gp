@@ -1,4 +1,4 @@
 git add -A
-git commit -m "recheck user recovery email"
+git commit -m "set up basic flash messages"
 git push origin master
 git push heroku master
