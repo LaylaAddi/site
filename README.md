@@ -4,7 +4,7 @@ http://blog.chesnowitz.com/
 http://stock.chesnowitz.com/
 http://photo.chesnowitz.com/
 http://scrape.chesnowitz.com/
-heroku addons:create sendgrid:starter
+
 target="_blank" href="http://saasy.chesnowitz.com/"
 target="_blank" href="http://book.chesnowitz.com/"
 target="_blank" href="http://blog.chesnowitz.com/"
@@ -16,7 +16,7 @@ def allow_iframe_requests
   response.headers.delete('X-Frame-Options')
 end
 
-  place in homepage controller  before_filter :allow_iframe_requests
+   before_filter :allow_iframe_requests
   
   rails g scaffold Quote client:string pages:string images:string hosting:string domain_name:string design:text terms_conditions:boolean user_registration:string user_registration_details:text budget:integer
   
