@@ -1,4 +1,4 @@
 git add -A
-git commit -m "push production more edits added porfolio paged"
+git commit -m "before_filter :allow_iframe_requests"
 git push origin master
 git push heroku master
