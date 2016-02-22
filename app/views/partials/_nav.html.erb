@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top navback">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -20,7 +20,8 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-      <% if current_user %>  
+      <% if current_user %> 
+        <li><%= link_to "Sample Projects", pages_projects_path %></li> 
         <li><%= link_to "My Quote", quotes_path %></li>   
       <% else %>
         <li><%= link_to "Sign Up", new_user_registration_path %></li>

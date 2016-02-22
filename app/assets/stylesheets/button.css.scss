@@ -1,0 +1,145 @@
+.btn-main { 
+  color: #FFFFFF; 
+  background-color: #008080; 
+  border-color: #021717; 
+} 
+ 
+.btn-main:hover, 
+.btn-main:focus, 
+.btn-main:active, 
+.btn-main.active, 
+.open .dropdown-toggle.btn-main { 
+  color: #FFFFFF; 
+  background-color: #15DBDB; 
+  border-color: #021717; 
+} 
+ 
+.btn-main:active, 
+.btn-main.active, 
+.open .dropdown-toggle.btn-main { 
+  background-image: none; 
+} 
+ 
+.btn-main.disabled, 
+.btn-main[disabled], 
+fieldset[disabled] .btn-main, 
+.btn-main.disabled:hover, 
+.btn-main[disabled]:hover, 
+fieldset[disabled] .btn-main:hover, 
+.btn-main.disabled:focus, 
+.btn-main[disabled]:focus, 
+fieldset[disabled] .btn-main:focus, 
+.btn-main.disabled:active, 
+.btn-main[disabled]:active, 
+fieldset[disabled] .btn-main:active, 
+.btn-main.disabled.active, 
+.btn-main[disabled].active, 
+fieldset[disabled] .btn-main.active { 
+  background-color: #008080; 
+  border-color: #021717; 
+} 
+ 
+.btn-main .badge { 
+  color: #008080; 
+  background-color: #FFFFFF; 
+}
+
+
+.btn-edit { 
+  color: #ffffff; 
+  background-color: #629191; 
+  border-color: #011717; 
+} 
+ 
+.btn-edit:hover, 
+.btn-edit:focus, 
+.btn-edit:active, 
+.btn-edit.active, 
+.open .dropdown-toggle.btn-edit { 
+  color: #ffffff; 
+  background-color: #2B4747; 
+  border-color: #011717; 
+} 
+ 
+.btn-edit:active, 
+.btn-edit.active, 
+.open .dropdown-toggle.btn-edit { 
+  background-image: none; 
+} 
+ 
+.btn-edit.disabled, 
+.btn-edit[disabled], 
+fieldset[disabled] .btn-edit, 
+.btn-edit.disabled:hover, 
+.btn-edit[disabled]:hover, 
+fieldset[disabled] .btn-edit:hover, 
+.btn-edit.disabled:focus, 
+.btn-edit[disabled]:focus, 
+fieldset[disabled] .btn-edit:focus, 
+.btn-edit.disabled:active, 
+.btn-edit[disabled]:active, 
+fieldset[disabled] .btn-edit:active, 
+.btn-edit.disabled.active, 
+.btn-edit[disabled].active, 
+fieldset[disabled] .btn-edit.active { 
+  background-color: #629191; 
+  border-color: #011717; 
+} 
+ 
+.btn-edit .badge { 
+  color: #629191; 
+  background-color: #ffffff; 
+}
+
+
+
+
+.btn-delete { 
+  color: #ffffff; 
+  background-color: #D10000; 
+  border-color: #021717; 
+} 
+ 
+.btn-delete:hover, 
+.btn-delete:focus, 
+.btn-delete:active, 
+.btn-delete.active, 
+.open .dropdown-toggle.btn-delete { 
+  color: #ffffff; 
+  background-color: #1B9E9E; 
+  border-color: #021717; 
+} 
+ 
+.btn-delete:active, 
+.btn-delete.active, 
+.open .dropdown-toggle.btn-delete { 
+  background-image: none; 
+} 
+ 
+.btn-delete.disabled, 
+.btn-delete[disabled], 
+fieldset[disabled] .btn-delete, 
+.btn-delete.disabled:hover, 
+.btn-delete[disabled]:hover, 
+fieldset[disabled] .btn-delete:hover, 
+.btn-delete.disabled:focus, 
+.btn-delete[disabled]:focus, 
+fieldset[disabled] .btn-delete:focus, 
+.btn-delete.disabled:active, 
+.btn-delete[disabled]:active, 
+fieldset[disabled] .btn-delete:active, 
+.btn-delete.disabled.active, 
+.btn-delete[disabled].active, 
+fieldset[disabled] .btn-delete.active { 
+  background-color: #D10000; 
+  border-color: #021717; 
+} 
+ 
+.btn-delete .badge { 
+  color: #D10000; 
+  background-color: #ffffff; 
+}
+
+// .pad {
+//   padding-top: 10px;
+// }

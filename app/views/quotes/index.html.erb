@@ -32,9 +32,10 @@
         <td><%= quote.user_registration %></td>
         <td><%= quote.user_registration_details %></td>
         <td><%= quote.budget %></td>
-        <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', quote, class: "btn-main btn-xs radius"  %></td>
+        <td><%= link_to 'Edit', edit_quote_path(quote), class: "btn-edit btn-xs radius"  %></td>
+        <td><%= link_to 'Destroy', quote, method: :delete, 
+        data: { confirm: 'Are you sure?' }, class: "btn-delete btn-xs radius"  %></td>
       </tr>
     <% end %>
   </tbody>
@@ -42,4 +43,4 @@
 
 <br>
 
-<%= link_to 'New Quote', new_quote_path %>
+<%= link_to 'New Quote', new_quote_path, class: "btn-main btn-sm radius" %>
