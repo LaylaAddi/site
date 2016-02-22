@@ -96,7 +96,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #006666;
 }
 
 .navbar-default .nav > li>a,
@@ -130,7 +130,7 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(0, 102, 102,.7);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -160,7 +160,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #006666;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -401,9 +401,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #009999;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #006666;
 }
 
 .btn-primary:active,

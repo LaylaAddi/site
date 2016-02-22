@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'frontend-generators', '~> 0.0.1'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'

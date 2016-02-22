@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   resources :quotes
   devise_for :users, :controllers => { registrations: 'registrations' }
-  root to: 'pages#index'
-  get 'creatives/index'
+  get 'pages/index'
+  root to: 'creatives#index'
  
 end
