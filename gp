@@ -1,4 +1,4 @@
 git add -A
-git commit -m "set uo  js pinger"
+git commit -m "completed client mailer functionality"
 git push origin master
 git push heroku master
