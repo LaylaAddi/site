@@ -1,13 +1,15 @@
 class ContactMailer < ActionMailer::Base
   default to: "info@chesnowtiz.com"
   
-  def contact_mail(name, email, message)
+  def contact_email(name, email, message)
     @name = name
     @email = email
     @message = message
+
+  
+  mail(from: email, subject: 'Chesnowtiz.com Contact Form Message')
   end
-  
-  mail(from: email, subject: "Chesnowitz.com contact form")
-  
-  
 end
+
+
+

@@ -9,10 +9,13 @@ class ContactsController < ApplicationController
     
       if @contact.save
         redirect_to root_path
-        name = [:contact][:name]
-        email = [:contact][:email]
-        message = [:contact][:message]
+        
+        name = params[:contact][:name]
+        email = params[:contact][:email]
+        message = params[:contact][:message]
+        
         ContactMailer.contact_email(name, email, message).deliver
+        
         flash[:success] = "Thanks for the message, we will be in touch soon."
       else
         redirect_to root_path
