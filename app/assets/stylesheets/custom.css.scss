@@ -5,6 +5,11 @@ body {
 background-image: asset-url('cubes.PNG');
 } 
 
+.foottext {
+  color: white;
+  padding-top: 15px;
+}
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: transparent;
     color: #009999;
@@ -12,7 +17,7 @@ background-image: asset-url('cubes.PNG');
 
 .navback {
   background-color: #ccffff;
-background-image: asset-url('fabric.png');
+background-image: asset-url('navbg.png');
 }
 
 .radius {

@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'frontend-generators', '~> 0.0.1'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'mailboxer', '~> 0.13.0'
 # gem 'money-rails', '~> 1.6'
 
 group :development, :test do
