@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require chosen-jquery
+//= require messages
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
@@ -20,7 +22,3 @@
         $('.dropdown-toggle').dropdown();
     });
 
-  var http = require("http");
-  setInterval(function() {
-      http.get("http://chesnowitz.herokuapp.com");
-  }, 300000); // every 5 minutes (300000)

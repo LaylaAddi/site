@@ -4,11 +4,11 @@ Mailboxer.setup do |config|
   config.uses_emails = true
 
   #Configures the default from for emails sent for Messages and Notifications
-  config.default_from = "no-reply@mailboxer.com"
+  config.default_from = "You_got_a_message@chesnowitz.com"
 
   #Configures the methods needed by mailboxer
   config.email_method = :mailboxer_email
-  config.name_method = :name
+  config.name_method = :username
 
   #Configures if you use or not a search engine and which one you are using
   #Supported engines: [:solr,:sphinx]
@@ -19,3 +19,4 @@ Mailboxer.setup do |config|
   config.subject_max_length = 255
   config.body_max_length = 32000
 end
+

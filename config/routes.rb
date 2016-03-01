@@ -7,8 +7,17 @@ Rails.application.routes.draw do
   resources :quotes
   resources :contacts
   
-  resources :conversations do
-    resources :messages
+  resources :conversations, only: [:index, :show, :destroy] do
+    member do
+      post :reply
+      post :restore
+      post :mark_as_read
+    end
+    collection do
+      delete :empty_trash
+    end
   end
- 
+  resources :messages, only: [:new, :create]
+
+  resources :users, only: [:index]
 end
