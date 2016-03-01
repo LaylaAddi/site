@@ -1,4 +1,4 @@
 git add -A
-git commit -m "competed contact form and added footer to main page" 
+git commit -m "testing broken mailboxer" 
 git push origin master
 git push heroku master
