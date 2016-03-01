@@ -21,6 +21,7 @@
 
       <ul class="nav navbar-nav navbar-right">
       <% if current_user %> 
+        <li><%= link_to "My Inbox", mailbox_inbox_path %></li>
         <li><%= link_to "Sample Projects", pages_projects_path %></li> 
         <li><%= link_to "My Quote", quotes_path %></li>   
       <% else %>

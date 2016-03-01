@@ -7,5 +7,17 @@ class ApplicationController < ActionController::Base
   def allow_iframe_requests
     response.headers.delete('X-Frame-Options')
   end
+  
+  helper_method :mailbox, :conversation
+  
+  private
+
+  def mailbox
+    @mailbox ||= current_user.mailbox
+  end
+
+  def conversation
+    @conversation ||= mailbox.conversations.find(params[:id])
+  end
 
 end

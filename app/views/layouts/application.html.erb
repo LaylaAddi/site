@@ -8,8 +8,9 @@
 </head>
 <body> 
   <%=render 'partials/nav' %>
+  <%=render 'layouts/messages' %> 
 <div class="container">
-  <%=render 'partials/flash' %> 
+  
 <%= yield %>
 </div>
 <%=render 'partials/foot' %>
