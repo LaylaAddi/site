@@ -18,6 +18,7 @@ gem 'will_paginate', '~> 3.1'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'chosen-rails'
 gem 'gravatar_image_tag'
+gem 'font-awesome-sass'
 
 # gem 'money-rails', '~> 1.6'
 
