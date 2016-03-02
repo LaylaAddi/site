@@ -1,4 +1,4 @@
 git add -A
-git commit -m "pushing to productions to test mail upgrades" 
+git commit -m "gem 'bootstrap-sass-extras' to generate flash" 
 git push origin master
 git push heroku master
