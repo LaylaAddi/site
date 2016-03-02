@@ -1,4 +1,4 @@
 git add -A
-git commit -m "chat function added" 
+git commit -m "pushing to productions to test mail upgrades" 
 git push origin master
 git push heroku master
