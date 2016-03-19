@@ -1,4 +1,4 @@
 git add -A
-git commit -m "testing heroku" 
-git push origin master
-git push heroku master
+git commit -m "added post model controller and index view" 
+git push origin forum
+
