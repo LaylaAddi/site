@@ -1,4 +1,4 @@
 git add -A
-git commit -m "added post model controller and index view" 
+git commit -m "added create show" 
 git push origin forum
 
