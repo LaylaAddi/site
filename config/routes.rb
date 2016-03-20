@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   root to: 'creatives#index'
   resources :quotes
   resources :contacts
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   
   resources :conversations, only: [:index, :show, :destroy] do
     member do

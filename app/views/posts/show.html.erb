@@ -1,5 +1,9 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.content %></p>
+<h2><%= @post.comments.count %></h2>
+<%=   @post.comments %>
+<h4>Reply To Thread</h4>
+<%= render 'comments/form' %>
 
 <%= link_to "Edit Post", edit_post_path(@post) %>
 <%= link_to "Delete Post", post_path(@post), method: :delete, 
