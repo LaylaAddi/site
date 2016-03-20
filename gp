@@ -1,4 +1,4 @@
 git add -A
-git commit -m "added comments and control" 
+git commit -m "can 3" 
 git push origin forum
 

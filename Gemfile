@@ -20,6 +20,7 @@ gem 'chosen-rails'
 gem 'gravatar_image_tag'
 gem 'font-awesome-sass'
 gem 'bootstrap-sass-extras'
+gem 'cancancan', '~> 1.13', '>= 1.13.1'
 
 # gem 'money-rails', '~> 1.6'
 

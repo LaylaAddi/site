@@ -1,11 +1,51 @@
+
+
+<div class="row">
+    <!-- Blog Post Content Column -->
+    <div class="col-lg-8">
 <% @posts.each do |post| %>
+        <!-- Blog Post -->
 
-<h2><%= link_to post.title, post %></h2>
-<p><%= post.content %></p>
-<h4>Posted By: <%=  post.user.username %></h4>
+        <!-- Title -->
+        <h4 style="font-size: 45.5px;"><%= link_to post.title, post %></h4>
+                        <!-- Date/Time -->
+        <p><span class="glyphicon glyphicon-time"></span> Was Posted: 
+            <%= time_ago_in_words(post.created_at) %> ago and has <%= post.comments.count %> comments
+        </p>
+        
 
-<p>Was Posted: <%= time_ago_in_words(post.created_at) %> ago</p>
-  
+        <!-- Author -->
+        <p>
+             Posted By:<strong>  <%=  post.user.username %></strong>
+        </p>
+
+
+
+
+
+
+        <hr>
+
+        <!-- Posted Comments -->
+
+        <!-- Comment -->
+
 <% end %>
 
 <%= link_to "New Post", new_post_path, class: "btn btn-default btn-xs" %>
+
+    </div>
+
+<!-- Blog Sidebar Widgets Column -->
+<div class="col-md-4">
+    <div class="well">
+          <h4>Recent Posts</h4>
+            <% @last10.each do |p| %>
+              Created by: <%= p.user.username %><br />
+              <strong><%= link_to p.title, p %></strong>
+              <p><%= truncate(p.content) %></p>
+            <% end %>
+    </div>
+</div>
+
+</div>
