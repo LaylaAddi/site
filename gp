@@ -1,4 +1,4 @@
 git add -A
-git commit -m "added edit and destroy to posts" 
+git commit -m "looping posts on forum index working" 
 git push origin forum
 
