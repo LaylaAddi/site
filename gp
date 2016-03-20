@@ -1,4 +1,4 @@
 git add -A
-git commit -m "updated user table admin boolean" 
+git commit -m "associated article with user" 
 git push origin forum
 
