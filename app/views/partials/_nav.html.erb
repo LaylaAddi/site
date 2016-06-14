@@ -21,17 +21,17 @@
 
       <ul class="nav navbar-nav navbar-right">
       <% if current_user  %>
-      <li><%= link_to "Forum", posts_path %></li> 
-      <li><%= link_to "New Post", new_post_path %></li>
+      <li><% link_to "Forum", posts_path %></li> 
+      <li><% link_to "New Post", new_post_path %></li>
       <% end %>
   
         <li class="dropdown">
           <% if current_user %>
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><%= link_to "Edit my Profile", edit_user_registration_path %></li>
+            <li><% link_to "Edit my Profile", edit_user_registration_path %></li>
             <li role="separator" class="divider"></li>
-            <li><%= link_to "End Session", destroy_user_session_path, method: :delete %></li>
+            <li><% link_to "End Session", destroy_user_session_path, method: :delete %></li>
           <% end %>
           </ul>
         </li>
