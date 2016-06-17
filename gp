@@ -1,5 +1,5 @@
 git add -A
-git commit -m "User Auth" 
+git commit -m "homepage"
 git push origin master
 git push heroku master
 
