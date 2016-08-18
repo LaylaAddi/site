@@ -1,0 +1,14 @@
+{
+  "name": "myapp",
+  "description": "steve chesnowitz.com",
+  "keywords": [
+    "dokku",
+    "rails",
+    "chesnowitz.com"
+  ],
+  "scripts": {
+    "dokku": {
+      "postdeploy": "bundle exec rake db:migrate"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 git add -A
-git commit -m "homepage"
+git commit -m "do dokku"
 git push origin master
-git push heroku master
+git push dokku master
 
